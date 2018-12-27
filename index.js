@@ -6,6 +6,6 @@ const lowerCaseDrivers = (drivers) => {
 const nameToAttributes = (drivers) => {
   return drivers.map((driver) => {
     const nameArray = driver.split(" ");
-    return Object.assign({}, firstName: nameArray[0], lastName: nameArray[1]);
+    return { firstName: nameArray[0], lastName: nameArray[1] };
   });
 };
