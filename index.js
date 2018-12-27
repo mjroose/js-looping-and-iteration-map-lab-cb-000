@@ -9,3 +9,7 @@ const nameToAttributes = (drivers) => {
     return { firstName: nameArray[0], lastName: nameArray[1] };
   });
 };
+
+const attributesToPhrase = (drivers) => {
+  drivers.map((driver) => return `${driver.name} is from ${driver.hometown}`);
+};
